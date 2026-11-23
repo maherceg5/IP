@@ -204,6 +204,12 @@ main p {
     background-color: #218838;
 }
 
+.main-nav {
+    background-color: #333333;
+    padding: 12px;
+    text-align: center;
+}
+
 .main-nav ul {
     list-style: none;
     margin: 0;
@@ -212,14 +218,18 @@ main p {
 
 .main-nav li {
     display: inline-block;
+    margin: 4px;
 }
 
 .main-nav a {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 14px;
+    margin: 0;
     text-decoration: none;
-    background-color: #333333;
+    background-color: #444444;
     color: white;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
 .main-nav a:visited {
@@ -228,12 +238,12 @@ main p {
 
 .main-nav a:hover,
 .main-nav a:focus {
-    background-color: #555555;
-    color: white;
+    background-color: #ffcf00;
+    color: #333333;
 }
 
 .main-nav a:focus {
-    outline: 2px solid #ffffff;
+    outline: 2px solid white;
 }
 
 .main-nav a:active {
@@ -265,6 +275,7 @@ main p {
 }
 
 .lego-gallery {
+    width: 100%;
     max-width: 900px;
     margin: 20px auto;
     text-align: center;
@@ -272,12 +283,18 @@ main p {
 
 .gallery-row {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .gallery-row img {
-    width: calc(33.33% - 10px);
+    display: block;
+    width: calc((100% - 30px) / 3);
+    height: 180px;
+    object-fit: cover;
     box-sizing: border-box;
 }
 

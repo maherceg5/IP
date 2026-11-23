@@ -130,3 +130,23 @@ main p {
 .raspored th {
     background-color: #fff7cc;
 }
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border: 2px solid blue;
+    background-color: #eaf2ff;
+}
+
+form input:checked {
+    accent-color: green;
+}
+
+form input:disabled {
+    background-color: #dddddd;
+    color: gray;
+}
+
+form input:enabled {
+    background-color: white;
+}

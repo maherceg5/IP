@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -130,23 +131,75 @@ main p {
 .raspored th {
     background-color: #fff7cc;
 }
-form input:focus,
-form textarea:focus,
-form select:focus {
+
+.lego-contact {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #cccccc;
+}
+
+.lego-form .form-row {
+    margin-bottom: 15px;
+}
+
+.lego-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.lego-form input,
+.lego-form select,
+.lego-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.lego-form .option input {
+    width: auto;
+}
+
+.lego-form input:enabled,
+.lego-form select:enabled,
+.lego-form textarea:enabled {
+    background-color: #ffffff;
+}
+
+.lego-form input:focus,
+.lego-form select:focus,
+.lego-form textarea:focus {
     outline: none;
     border: 2px solid blue;
     background-color: #eaf2ff;
 }
 
-form input:checked {
-    accent-color: green;
+.lego-form input[type="checkbox"]:checked + label,
+.lego-form input[type="radio"]:checked + label {
+    font-weight: 700;
+    color: #1a7f1a;
 }
 
-form input:disabled {
+.lego-form input:disabled {
     background-color: #dddddd;
     color: gray;
+    cursor: not-allowed;
 }
 
-form input:enabled {
-    background-color: white;
+.lego-form .btn-send {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lego-form .btn-send:hover {
+    background-color: #218838;
 }

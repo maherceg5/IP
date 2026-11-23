@@ -203,3 +203,102 @@ main p {
 .lego-form .btn-send:hover {
     background-color: #218838;
 }
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #333333;
+    color: white;
+}
+
+.main-nav a:visited {
+    color: #cccccc;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: #555555;
+    color: white;
+}
+
+.main-nav a:focus {
+    outline: 2px solid #ffffff;
+}
+
+.main-nav a:active {
+    transform: scale(0.97);
+}
+
+.main-nav a[href="Vjezba6_2.html"] {
+    background-color: #555555;
+}
+
+.main-nav a[target] {
+    color: #ffcf00;
+}
+
+.main-nav a[href^="https"] {
+    font-weight: bold;
+}
+
+.main-nav a[href$=".html"] {
+    border-radius: 4px;
+}
+
+.main-nav a[href*="lego"] {
+    text-decoration: underline;
+}
+
+.main-nav a[target="_blank"]::after {
+    content: " ↗";
+}
+
+.lego-gallery {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.gallery-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.gallery-row img {
+    width: calc(33.33% - 10px);
+    box-sizing: border-box;
+}
+
+.lego-gallery img[data-set="city"] {
+    border: 4px solid blue;
+}
+
+.lego-gallery img[data-set="technic"] {
+    border: 4px solid orange;
+}
+
+.lego-gallery img[data-set="friends"] {
+    border: 4px solid deeppink;
+}
+
+.lego-gallery img[src$=".jpg"] {
+    border-radius: 8px;
+}
+
+.lego-gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
